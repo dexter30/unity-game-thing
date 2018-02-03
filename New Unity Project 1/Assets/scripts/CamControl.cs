@@ -66,6 +66,18 @@ public class CamControl : MonoBehaviour {
     public void unpauseCam()
     {
         scene = false;
+        target = GameObject.FindWithTag("Player");
+    }
+
+    public void focusOn(GameObject _target)
+    {
+        target = _target;
+       // Vector3 wantedPosition;
+       //
+       // wantedPosition = _target.TransformPoint(distance, height, 0);
+       //
+       // transform.position = Vector3.Lerp(transform.position, wantedPosition, Time.deltaTime * damping);
+       // transform.LookAt(_target, _target.up);
     }
     // Update is called once per frame
     void Update () {

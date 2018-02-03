@@ -5,8 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <ProjectGuid>{FC9411EB-1B12-4154-0219-EEA7CBD09863}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -46,23 +45,25 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\dialogManager.cs" />
-    <Compile Include="Assets\Fighter Pack Bundle\Male Fighter Mecanim Animation Pack\Code\CameraControl.cs" />
-    <Compile Include="Assets\Fighter Pack Bundle\Male Fighter Mecanim Animation Pack\Code\FighterAnimationDemo.cs" />
-    <Compile Include="Assets\Singleton.cs" />
-    <Compile Include="Assets\SpriteScript.cs" />
-    <Compile Include="Assets\cutscene.cs" />
-    <Compile Include="Assets\narrativeDirector.cs" />
-    <Compile Include="Assets\scripts\CamControl.cs" />
-    <Compile Include="Assets\scripts\CharController.cs" />
-    <Compile Include="Assets\wordScript.cs" />
-    <None Include="Assets\Mr. Mo Base Character\Readme.txt" />
-    <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Networking">
-      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
-    </Reference>
+     <Compile Include="Assets\Fighter Pack Bundle\Male Fighter Mecanim Animation Pack\Code\CameraControl.cs" />
+     <Compile Include="Assets\Fighter Pack Bundle\Male Fighter Mecanim Animation Pack\Code\FighterAnimationDemo.cs" />
+     <Compile Include="Assets\NewBehaviourScript1.cs" />
+     <Compile Include="Assets\Singleton.cs" />
+     <Compile Include="Assets\SpriteScript.cs" />
+     <Compile Include="Assets\cutscene.cs" />
+     <Compile Include="Assets\dialogManager.cs" />
+     <Compile Include="Assets\narrativeDirector.cs" />
+     <Compile Include="Assets\scripts\CamControl.cs" />
+     <Compile Include="Assets\scripts\CharController.cs" />
+     <Compile Include="Assets\speakingScript.cs" />
+     <Compile Include="Assets\wordScript.cs" />
+     <None Include="Assets\Mr. Mo Base Character\Readme.txt" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -72,4 +73,5 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  
 </Project>

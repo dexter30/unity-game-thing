@@ -52,7 +52,7 @@ public class dialogManager : Singleton<dialogManager>
             
             if (currentLine  == fullScript.Length)
             {
-                print(fullScript.Length);
+                
                 Camera.main.GetComponent<CamControl>().unpauseCam();
                 inChat = false;
                 for (int i = 0; i < fullScript.Length; i++)
@@ -67,14 +67,32 @@ public class dialogManager : Singleton<dialogManager>
 
     IEnumerator iterateLine()
     {
-        print("boot");
+        
         
        
         yield return new WaitForSeconds(.5f);
         currentLine++;
-        stringToEdit = fullScript[currentLine];
+        
+        if (fullScript[currentLine][0] == '<')
+        {
+            if (fullScript[currentLine][1] == 'i')
+            { string noob;
+                noob = fullScript[currentLine].Substring(fullScript[currentLine].IndexOf('>') + 1);
+                Camera.main.GetComponent<CamControl>().focusOn(GameObject.Find(noob));
+                currentLine++;
+            }
+               
+        }
+        
+       stringToEdit = fullScript[currentLine];
+
         inChat = true;
     }
-    
-    
+
+    private void moveCam(string _charID) 
+    {
+        
+    }
+
+
 }
